@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Pakistan Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Mode</button>
+
+    <div class="clock-wrapper">
+        <!-- SVG Ring for Seconds Animation -->
+        <svg class="progress-ring">
+            <circle class="progress-ring__circle" cx="50%" cy="50%" r="48%" />
+            <circle class="progress-ring__bar" id="progress-bar" cx="50%" cy="50%" r="48%" />
+        </svg>
+
+        <div class="clock-face">
+            <div class="time-display">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                <span id="ampm" class="ampm">AM</span>
+            </div>
+            
+            <div class="date-container">
+                <div class="date-text" id="date">Loading...</div>
+                <div class="location-badge">PAKISTAN (PKT)</div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
